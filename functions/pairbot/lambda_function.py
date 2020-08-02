@@ -4,7 +4,7 @@ Slack chat-bot Lambda handler.
 
 import os
 import logging
-import urllib
+import urllib.request
 
 # Grab the Bot OAuth token from the environment.
 BOT_TOKEN = os.environ["BOT_TOKEN"]
