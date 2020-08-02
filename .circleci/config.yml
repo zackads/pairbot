@@ -28,8 +28,7 @@ jobs:
           name: Deploy Functions
           command: |
             cd functions
-            ../.circleci/deploy.sh echo
-            ../.circleci/deploy.sh hello-world
+            ../.circleci/deploy.sh pairbot
   build_stg:
     working_directory: ~/project
     docker:
@@ -58,8 +57,7 @@ jobs:
           name: Deploy Functions
           command: |
             cd functions
-            ../.circleci/deploy.sh echo
-            ../.circleci/deploy.sh hello-world
+            ../.circleci/deploy.sh pairbot
   build_prod:
     working_directory: ~/project
     docker:
@@ -88,8 +86,7 @@ jobs:
           name: Deploy Functions
           command: |
             cd functions
-            ../.circleci/deploy.sh echo
-            ../.circleci/deploy.sh hello-world
+            ../.circleci/deploy.sh pairbot
 workflows:
   version: 2
   full:
